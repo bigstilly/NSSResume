@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="js/Chart.js"></script>
     <link href="css/bootstrap.css" rel="stylesheet" />
     <link href="css/rotating-card.css" rel="stylesheet" />
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" />
@@ -160,6 +161,16 @@
 			font-weight: bold;
 			color: white;
 			margin: -6px 6px;
+		}
+		
+		.centerwhite {
+			font-family: Helvetica Sans-Serif;
+			font-size: 120%;
+			font-weight: bold;
+			color: white;
+			margin: -6px auto;
+			text-align: center;
+			padding-bottom: 10px;
 		}
 		
 		.red {
@@ -1196,20 +1207,78 @@ servant leadership, create super users,
 						
 					</div> <!--End of tab content-->
 					
-			  </div> <!-- Tab Panel-->
-			</div> <!-- col-sm-12-->
+			    </div> <!-- Tab Panel-->
+				
+				<div class="col-sm-3 black">	<!-- RHS of screen with graphs -->		
+					<div class="centerwhite">Years of Experience</div>
+					<canvas id="myChart" width="400" height="400"></canvas>
+				</div> <!-- col-sm-3-->
+			</div> <!-- row -->
+
 		</div> <!-- top row-->
 	</div> <!--container-->
 	
+
 <script>
-  $(function () {
-    $('#myTab a:last').tab('show')
-  })
-  
-  $(document).ready(function () {
-        $('#myTab a[href="#char"]').tab('show');           
-    });
-});
+//var ctx = document.getElementById("myChart");
+	var ctx = $("#myChart");
+	//alert("before chart");
+	var myChart = new Chart(ctx, {
+		type: 'bar',
+		data: {
+			labels: ["Leadership", "Project Mgmt", "Software Dev", "Database", "Budget", "Strategy"],
+			datasets: [{
+				//label: 'Years of Experience',
+				data: [12, 16, 18, 14, 10, 10],
+				backgroundColor: [
+					'rgba(255, 99, 132, 0.2)',
+					'rgba(54, 162, 235, 0.2)',
+					'rgba(255, 206, 86, 0.2)',
+					'rgba(75, 192, 192, 0.2)',
+					'rgba(153, 102, 255, 0.2)',
+					'rgba(255, 159, 64, 0.2)'
+				],
+				borderColor: [
+					'rgba(255,99,132,1)',
+					'rgba(54, 162, 235, 1)',
+					'rgba(255, 206, 86, 1)',
+					'rgba(75, 192, 192, 1)',
+					'rgba(153, 102, 255, 1)',
+					'rgba(255, 159, 64, 1)'
+				],
+				borderWidth: 1
+			}]
+		},
+		options: {
+			title: {
+				display: false,
+				text: 'test'
+			},
+			scales: {
+				yAxes: [{
+					ticks: {
+						beginAtZero:true
+					}
+				}]
+			},
+			legend: {
+				display: false
+			}
+		}
+
+	});
+	//alert("after chjart");
+
+	/*
+	  $(function () {
+		$('#myTab a:last').tab('show')
+	  })
+	  
+	  $(document).ready(function () {
+			$('#myTab a[href="#char"]').tab('show');           
+		});
+	});
+	*/
 </script>
 
 	
