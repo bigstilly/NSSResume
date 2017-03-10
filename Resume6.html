@@ -1,0 +1,1217 @@
+<!doctype html>
+<html>
+<head>
+    <title>Nelson Still Resume</title>
+		
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/rotating-card.css" rel="stylesheet" />
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+
+	<style type="text/css">
+		
+		body {
+			font-family: Helvetica Sans-Serif;
+			background-color: #141414;
+		}
+		
+		.black {
+			font-family: Helvetica Sans-Serif;
+			background-color: #282828;
+		}
+		
+		.bottom {
+			border-bottom: 1px solid #848484;
+			padding-bottom: 20px;
+		}
+		
+		.bluelabel {
+			background-color: #4CA5D1;
+			color: white;
+			font-size: 150%;
+			padding:5px 40px;
+			position: relative;
+			left: -70px;
+			margin-bottom:10px;
+		}
+		
+		#mainpanel {
+			background-color: #282828;
+			border: 1px solid #373737;
+			margin: -30px auto;
+			padding: -5px;
+			
+		}
+		
+		#topper {
+			position: fixed;
+			left:0px;
+			top:0px;
+			width:100%;
+			height:110px;
+			padding: 10px auto;
+			margin-bottom: 10px;
+			z-index: 999;
+			background-color: lightgrey;
+		}
+		
+		.resheading {
+			background-color: #848484;
+			border: 1px solid #373737;
+			margin: 4px auto;
+			padding: 5px;
+			color: white;
+			font-size:110%;
+			width:80%;
+			float: left;
+			font-weight: bold;
+		}
+		
+		.imgheading {
+			background-color: #848484;
+			margin: 8px;
+			float: left;
+		}
+		
+		h1 {
+			position: relative;
+			font-family: Helvetica Sans-Serif;
+			font-size: 300%;
+			color: white;
+			font-weight: bold;
+			float: left;
+			margin: 1px 10px 10px 5px;
+		}
+		
+		h2 {
+			font-family: Helvetica Sans-Serif;
+			font-size: 110%;
+			color: blue;
+			font-weight: bold;
+			margin-top:5px;
+			margin-bottom:5px;
+			float: left;
+		}
+		
+		h3 {
+			font-family: Helvetica Sans-Serif;
+			font-size: 120%;
+			color: teal;
+			font-weight: bold;
+		}
+		
+		h4 {
+			font-family: Helvetica Sans-Serif;
+			font-size: 90%;
+		}
+		
+		
+
+		.ques {
+			position: relative;
+			font-family: Helvetica Sans-Serif;
+			font-size: 100%;
+			color: white;
+			font-weight: bold;
+			text-align: right;
+			margin: 1px 10px 10px 5px;
+		}
+		
+		.ans {
+			position: relative;
+			font-family: Helvetica Sans-Serif;
+			font-size: 100%;
+			color: #848484;
+			font-weight: bold;
+			text-align: left;
+			margin: 1px 10px 10px 5px;	
+		}
+			
+		.paneltext {
+			position: relative;
+			font-family: Helvetica Sans-Serif;
+			font-size: 90%;
+			color: #848484;
+			text-align: left;
+			margin: 1px 10px 10px 5px;	
+		}
+		
+		.codetail {
+			position: relative;
+			font-family: Helvetica Sans-Serif;
+			font-size: 90%;
+			color: #848484;
+			font-weight: normal;
+			text-align: left;
+			margin: 1px 10px 10px 5px;
+			display: inline-block;
+		}
+		
+		
+		.tabs {
+			padding-top: 10px;
+		}
+		
+		.chartext {
+			font-family: Helvetica Sans-Serif;
+			font-size: 120%;
+			font-weight: bold;
+			color: white;
+			margin: -6px 6px;
+		}
+		
+		.red {
+			color:red;
+
+		}
+		
+		.orange {
+			color:orange;
+		}
+		
+		.blue {
+			color:blue;
+		}
+		
+		.lightblue {
+			color:lightblue;
+		}
+		
+		.green {
+			color:green;
+		}
+
+		.title {
+			position: relative;
+			font-family: Helvetica Sans-Serif;
+			font-size: 100%;
+			color: white;
+			font-weight: bold;
+			text-align: left;
+			margin: 1px 10px 10px 5px;
+			padding-top: 6px; 
+		}
+
+		.company {
+			margin-top:-4px;
+			margin-bottom: 10px;
+		}
+		
+		.centerit {
+			margin: auto;
+		}
+				
+		.label a {
+			color: white;
+		}
+		.label-purple {
+			background-color: purple;
+		}
+		
+		.img-responsive {object-fit: cover; max-height: 100px; height: auto; width: auto;}
+		.img-responsive2 {height: 100px; }
+		.bord {border:1px solid grey; padding:10px;}
+		
+		.footimg {
+			width: 12%;
+		}
+		.footname {
+			padding-top: 6px;
+		}
+		
+		.minmargtop {
+			margin-top: -30pxpx;
+			padding-top: -10px;
+		}
+		
+		.minmargbottom {
+			margin-bottom: -30pxpx;
+			padding-bottom: -10px;
+		}
+		
+		.techhead {
+			position: relative;
+			font-family: Helvetica Sans-Serif;
+			font-size: 100%;
+			color: white;
+			font-weight: bold;
+			text-align: left;
+			width:220px;
+			margin: 1px 10px 10px 5px;
+		}
+		.techdetail {
+			position: relative;
+			font-family: Helvetica Sans-Serif;
+			font-size: 100%;
+			color: #848484;
+			font-weight: bold;
+			text-align: left;
+			margin: 1px 10px 10px 5px;
+			
+		}
+
+	</style>
+		
+  <script>
+
+  </script>
+  
+</head>
+
+<body >
+
+	<div class="container" id="mainpanel">
+		<div class="row">
+			<div class="col-sm-12">  <!-- Start of top table 12 cols-->
+				<div class="table" > <!-- Top table-->
+				  <div class="row black">
+					<div class="col-sm-2">
+						<img src="images/LI Nelson.jpg" style="display:block; margin-left:auto; margin-right:auto;"/>		
+					</div>
+					<div class="col-sm-5">
+						<div class="table black" > <!-- Top table-->
+							<div class="row black">
+								<div class="col black">
+									<h1>Nelson Still</h1>
+								</div>
+							</div>
+							<div class="row black">
+								<div class="col black">
+									<h2>Chief Information Officer</h2>
+								</div>
+							</div>
+							<div class="row black" style="height:20px"></div>
+							<div class="row black">
+								<div class="col black lightblue">
+									<h4>Leader. Problem solver. Enabler. Energizer of change and innovation.</h4>
+									<h4>Delivering business-driven Technology through Leadership, Vision and Collaboration</h4>
+<!-- key terms for ticker tae 
+farmer of low-hanging fruit, Leader. Problem solver. Enabler. Energizer of change, instigator of conversation, rotate crops of failure and innovation
+Don't let process be the enemy of creativity; hire lazy and bored; hire aptitude and attitude; people skills are important; bad apples begone;
+team spirit makes the party; you can't fake integrity; people remember how you make them feel; find ways to encourage conversations; 
+servant leadership, create super users, 
+-->
+								</div>
+							</div>
+							
+						</div>
+					</div>
+					<div class="col-sm-5 black">
+						<div class="table black" > <!-- Top table-->
+							<div class="row black">
+								<div class="col ques black">
+									Location
+								</div>
+								<div class="col ans black">
+									Milwaukee, Wi
+								</div>
+							</div>
+							<div class="row black">
+								<div class="col ques black">
+									Birthplace
+								</div>
+								<div class="col ans black">
+									Glasgow, Scotland
+								</div>
+							</div>
+							<div class="row black">
+								<div class="col ques black">
+									Phone
+								</div>
+								<div class="col ans black">
+									414-324-5550
+								</div>
+							</div>
+							<div class="row black">
+								<div class="col ques black">
+									Email
+								</div>
+								<div class="col ans black">
+									
+									<a href="mailto:nelson.still@gmail.com">nelson.still@gmail.com</a> 
+								</div>
+							</div>
+							<div class="row black">
+								<div class="col ques black">
+									Website
+								</div>
+								<div class="col ans black">
+									www.bigstilly.com
+								</div>
+							</div>
+						</div>	
+					</div>
+				  </div> <!-- Top row with photo of main table-->
+				  
+				  <div class="row black bottom">
+					<div class="col-sm-12 black">
+						<span class="ans">
+							A pragmatic innovator, team builder, strong communicator, energizer and marketer of change. I envision and drive toward small wins that generate momentum and business confidence, while moving in step with the overall strategy. I have shown a flair for building and empowering teams that deliver technology to drive business advantage.
+						</span>
+					</div>
+				  </div>
+
+				</div> <!-- top row-->
+
+			<div class="row black tabs"> <!-- Panel Table-->
+				<div class="col-sm-9 black">
+					<ul class="nav nav-pills"  id="myTab" role="tablist">
+						<li class="nav-item active">
+							<a class="nav-link " data-toggle="tab" role="tab" href="#char">Characteristics</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Employment History</a>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" data-toggle="tab" role="tab" href="#MPG">ManpowerGroup</a>
+								<a class="dropdown-item" data-toggle="tab" role="tab" href="#WHD">Whyte Hirschboeck Dudek (acquired by Husch Blackwell)</a>
+								<a class="dropdown-item" data-toggle="tab" role="tab" href="#MP">Market Probe</a>
+								<a class="dropdown-item" data-toggle="tab" role="tab" href="#SYN">Synovate (now part of IPSOS)</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" data-toggle="tab" role="tab" href="#MU">Marquette University</a>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" data-toggle="tab" role="tab" href="#Education">Education</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" data-toggle="tab" role="tab" href="#Recommendations">Recommendations</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" data-toggle="tab" role="tab" href="#lifemap">Lifemap</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" data-toggle="tab" role="tab" href="#tech">Technology</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" data-toggle="tab" role="tab" href="#interests">Interests</a>
+						</li>
+					</ul>
+				  
+					<div class="tab-content tabs">
+						<div class="tab-pane fade in active" id="char" role="tabpanel">
+							<div class="table" > 
+							    <div class="row black">
+									<div class="col paneltext">
+										<span class="glyphicon glyphicon-eye-open red" ><span class="chartext"> Vision</span></span>
+										<div>
+											<ul id="myList">
+												<li>Identified industry shifts and worked with C-Level executives in elite Legal industry think tank, to help promote some challenging ideas.</li>
+												<li>Brought about a new and competitive business model to market research firm with real-time dashboards that tied into customer operations.</li>
+												<li>Created a generic sampling system to enable implementation of large scale, automated customer satisfaction programs.</li>
+												<li>Worked with business leaders to create a unique workflow tool that enabled clients to upload contracts and obtain immediate price and timing.</li>
+											</ul>
+										</div>
+										  
+										<span class="glyphicon glyphicon-globe orange" ><span class="chartext"> Leadership</span></span>
+										<div>
+											<ul id="myList">
+												<li>At a large corporate, I had to rebuild numerous teams in both personnel and morale terms, aided by great recruiters.</li>
+												<li>Through integrity and egoless management, I have been able to attract some excellent people and get teams performing at a high level.</li>
+												<li>I led the largest account for the consulting company I worked for and helped to grow the account 30% by promoting new ideas with the client.</li>
+												<li>In 2009, I attended the SIM RLF (Regional Leadership Forum) which is considered the top IT leadership program in the country.</li>
+												<li>Current President of <a href="http://www.simnet.org/wisconsin">SIM Wisconsin</a>.</li>
+												<li>Secured my first coaching "job" at the age of 12 - an interesting story.</li>
+											</ul>
+											
+										</div>
+										<span class="glyphicon glyphicon-thumbs-up blue" ><span class="chartext"> Collaboration</span></span>
+										<div>
+											<ul id="myList">
+												<li>Improved productivity 32% with no external spend by working with VP of data acquisition to optimize available resources. </li>
+												<li>Worked with data collection team to implement a centralized, predictive dialer system for all our call centers. Significant ROI.</li>
+												<li>Worked with CEO and special project team, to implement an idea I had proposed that automated a sampling and data collection process.</li>
+												<li>Created a strong working relationship with a key vendor. An open, sharing and trusted partnership that benefited both companies.</li>
+											</ul>
+											
+											</p>
+										</div>
+
+										<span class="glyphicon glyphicon-tint green" ><span class="chartext"> Innovation</span></span>
+										<div>
+											<ul id="myList">
+												<li>Built feature rich and complex sampling engine, with ad-hoc query building, reporting, workflow. Unique in the market.</li>
+												<li>Built customer satisfaction system to collect and aggregate data, with sophisticated data-driven dashboards, providing near real-time data. Used by some of the biggest banks in the country.</li>
+												<li>Created resource planning tool to accurately track resource usage, optimize staffing and enable tight control of project costs and efficiency.</li>
+												<li>Developed a distribution system to control and monitor release of software updates, DDL, data feeds.</li>
+												<li>Created a plant simulator for multinational chemical and explosives company. Significantly reduced cost and time of sourcing personnel.</li>
+											</ul>
+											
+											</p>
+										</div>  
+				
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="tab-pane fade" id="MPG" role="tabpanel">
+						
+							<div class="table" > 
+							    <div class="row black">
+
+									<div class="col-sm-4 black">
+										<div class="company">											
+											<a href="http://www.manpowergroup.com/" class="btn btn-success btn-lg">
+											  <span class="glyphicon glyphicon-th"></span> ManpowerGroup 
+											</a>
+										</div>
+									</div>
+
+									<div class="col-sm-3 black">
+										<div class="title">
+											Director, NA IT
+										</div>
+									</div>
+									<div class="col-sm-2 black">
+										<div class="ans">
+											2014 - Present
+										</div>
+									</div>
+								</div>
+								
+								<div class="row black codetail"> <!-- MPG row-->
+									<span class="glyphicon glyphicon-tasks red" ></span> Global leader in staffing. $20B revenue, approximately 32,000 employees. Milwaukee HQ, with approximately 500 branches in NA, 3,900 worldwide.</br>
+									<span class="glyphicon glyphicon-lamp orange"></span> Oversee various teams, including Infrastructure, Enterprise Architecture, ERP, Business Intelligence, Business Analysis and Software Development. 
+									
+									<ul class="ul-company">
+										<li> Underwent reorg and rebuild of department after 2 years of right-sizing before I arrived.</li> 
+										<li> Rebuilt some teams from scratch, brought in and promoted some excellent leaders to create a productive environment and improve morale.</li>
+										<li> Brought the infrastructure and enterprise architecture function under an excellent new leader who has brought energy and alignment.</li>
+										<li> Moved our main data center to a managed service provider - minimal impact on business operations but a big impact on the bottom line.</li>
+										<li> Collaborating with business leaders and sales analysts to create a roadmap to greatly improve our business intelligence offerings.</li>
+										<li> Freeing up data for cosunmption outside of IT, while empowering users with intuitive self-service tools.</li>
+										<li> Restructured the ERP team and investigated ways to streamline our back-office operations further.</li>
+										<li> Created an environment that enables us to more quickly action new ideas from the business. Currently running a pilot program in Azure.</li>
+										<li> Meet weekly with the CIO and business technology partners to ensure alignment.</li>
+									</ul>
+								</div>
+							</div> <!-- MPG Table-->
+						</div> <!-- End MPG Tab-->
+						
+						
+						<div class="tab-pane fade" id="WHD" role="tabpanel">
+							<div class="table" > 
+							    <div class="row black">
+
+									<div class="col-sm-4 black">
+										<div class="company">											
+											<a href="http://www.huschblackwell.com/" class="btn btn-success btn-lg">
+											  <span class="glyphicon glyphicon-th"></span> Whyte Hirschboeck Dudek
+											</a>
+										</div>
+									</div>
+
+									<div class="col-sm-3 black">
+										<div class="title">
+											IT Director
+										</div>
+									</div>
+									<div class="col-sm-2 black">
+										<div class="ans">
+											2012 - 2014
+										</div>
+									</div>
+								</div>
+								
+								<div class="row black codetail">
+									<span class="glyphicon glyphicon-tasks red" ></span> Large, established law firm, with over 300 employees, HQ in Milwaukee. Since aquired by Husch Blackwell.</br>
+									<span class="glyphicon glyphicon-lamp orange"></span> Brought in to improve the business relationship of an IT department that had numerous technical debts and service quality issues.
+									<ul class="ul-company">
+										<li>Tackled some immediate technical and personnel concerns - low hanging fruit - to clearly demonstrate new expectations of customer service.</li>
+										<li>Identified some org changes that needed to be made, relocated team to central space - with windows - unusual in a law firm.</li>
+										<li>Regularly attend industry events and interact with key vendors to ensure we are aware of new solutions we could take advantage of.</li>
+										<li>Attend monthly Practice Group meetings to market new ideas, discuss industry trends and innovations, and to encourage conversations.</li>
+
+										<li>Rolled out Sharepoint 2010 with a custom dashboard integrated with financial and CRM systems for which we have recieved quiet recognition from industry vendors.</li>
+										<li>Achievements include: Sharepoint 2010, Windows 7 and Office 2010 with walk-around interns, Exchange 2010, quick training video initiative, mobile platform roll-out, financial system upgrade. Litigation support system, Knowledge Management, Sharefile, security audits and upgrades, new WiFi network, core switch upgrade, Cisco phone upgrade. </li>
+										<li>Initiatives currently in progress: Monitor Suite Business Intelligence, VDI pilot, Business Development and Project Management strategy (CLOC, LTC4, Sky Analytics).</li>
+										<li>Challenge managers on the network, infrastructure, software and training side to ensure we are implementing solutions that truly make the firm more productive.</li>
+										<li>Meet weekly with the CE and the other directors to develop strategy and ensure alignment.</li>
+										<li>Awarded SIM Wisconsin IT Executive of the Year 2013 (Corporate Category) in recognition of the achievements of the department.</li>
+									</ul>
+								</div>
+							</div> <!-- WHD Table-->
+						</div> <!-- End WHD Tab-->
+						
+						<div class="tab-pane fade" id="MP" role="tabpanel">
+						
+							<div class="table" > 
+							    <div class="row black">
+
+									<div class="col-sm-4 black">
+										<div class="company">											
+											<a href="http://marketprobe.com/" class="btn btn-success btn-lg">
+											  <span class="glyphicon glyphicon-th"></span> Market Probe 
+											</a>
+										</div>
+									</div>
+
+									<div class="col-sm-3 black">
+										<div class="title">
+											CIO and SVP
+										</div>
+									</div>
+									<div class="col-sm-2 black">
+										<div class="ans">
+											2007 - 2012
+										</div>
+									</div>
+								</div>
+								
+								<div class="row black codetail"> <!-- MPG row-->
+									<span class="glyphicon glyphicon-tasks red" ></span> Rapidly growing provider of market research services (4th fastest globally), through acquisition and organic growth. 12 offices in 9 countries, 1,300 employees.</br>
+									<span class="glyphicon glyphicon-lamp orange"></span> Recruited to create top performing technical development and support teams, that could provide competitive advantage and cost efficiencies.
+									<ul class="ul-company">
+										<li>Drove systems design to support generic solutions to improve standard solution offering and reduce customized development - web-enabled, data-driven solutions. </li>
+										<li>Improve project bidding mechanism, enable knowledge sharing across the enterprise and make presentations/recommendations to client's senior leaders. </li>
+										<li>Supervise local teams including infrastructure, telephony and software teams - as well as another 12 developers in India. Integrate acquisitions.</li>
+										<li>As Division Head, I form part of senior management team with functions including country manager meetings, interviewing senior candidates, assessing acquisitions and major RFPs.</li>
+										<li>Heavily involved in all major proposals, presentations and initial high level system design and integration.</li>
+									</ul>
+									
+									<ul class="ul-company MPG-more">
+										<li>Greatly enhanced department's ability to create industry leading client-facing web-based tools. Web-based Dashboards now considered a key competitive advantage for the company.</li>
+										<li>Working with call center team to improve efficiencies and evaluate vendor offerings, including CATI software solutions.</li>
+										<li>Improved efficiency of call center by 32%, without external spend. Then convinced leadership to implement predictive dialer system, globally. Huge success.</li>
+										<li>Spearheaded initiative to standardize CATI (and CAWI) system in all North American call centers. Largest technology investment in company's history - realized efficiency improvement up to 60%. A centralized solution that is highly integrated with sampling and reporting systems. </li>
+										<li>Established demo web sites and IT capability, FAQ and RFP documentation for client handouts.</li>
+										<li>Improved working relationship between IT and the various business departments it supports by establishing relationships and clear communication channels with key individuals.</li>
+										<li>Broadened skill sets of tenured IT employees through training and mentor program.</li>
+										<li>Implemented project management practices and tools to help manage projects using local and offshore resources. Collaboration tools include JIRA, wiki, Sharepoint, IM, Skype.</li>
+										<li>Elevated team performance/morale and overall quality of deliverables with the implementation of functional/strategic tools and methodologies - including project tracking and issue tracking.</li>
+										<li>Overseeing key technology initiatives - these include migration of systems to SQL Server and .Net (C# and Visual Basic), virtualization, disaster recovery (including a documented test of our detailed BCP), WAN optimization, Silverlight development.</li>
+										<li>Working with other business units to restructure part of organization to ensure efficiency and employee satisfaction and contribution.</li>
+									</ul>
+								</div>
+							</div> <!-- MP Table-->
+						</div> <!-- End MP Tab-->
+
+						<div class="tab-pane fade" id="SYN" role="tabpanel">
+						
+							<div class="table" > 
+							    <div class="row black">
+
+									<div class="col-sm-4 black">
+										<div class="company">											
+											<a href="https://www.ipsos.com/" class="btn btn-success btn-lg">
+											  <span class="glyphicon glyphicon-th"></span> Synovate
+											</a>
+										</div>
+									</div>
+
+									<div class="col-sm-3 black">
+										<div class="title">
+											VP Technology, ViewsNet
+										</div>
+									</div>
+									<div class="col-sm-2 black">
+										<div class="ans">
+											2004 - 2007
+										</div>
+									</div>
+								</div>
+								
+								<div class="row black codetail"> 
+									<span class="glyphicon glyphicon-tasks red" ></span> Leading provider of market research services (now part of IPSOS). 99 offices and 5,200 employees in 47 countries. Revenues exceed $800M annually.</br>
+									<span class="glyphicon glyphicon-lamp orange"></span> Promoted to orchestrate development of the organization's original panel management and sampling software to support a new business unit. 
+									<ul class="ul-company">
+										<li> Cultivate and maintain productive relationships with vendors, review proposals, and perform due diligence. Generate comprehensive technical presentations/recommendations to senior leaders in support of new ventures. </li>
+										<li> Provide planning and reconciliation of software development and maintenance budgets. Support merger of newly acquired companies through assessment/identification of technical resources that could add value to the enterprise.</li>
+										<li> Fueled corporate revenues by spearheading successful launch of software for new business unit in 6 Western European countries. Delivered panel management, sampling, broadcast, and email management.</li>
+										<li> Coordinate global project teams, often consisting of numerous different resources - on-shore/off-shore and external vendors.</li>
+										<li> Establish project plans ranging from analysis, software development, and integration to database upgrades, data migration, database centralization, and software acquisition. </li>
+										<li> Liaise with user groups to identify necessary system modifications and improvements. Research, evaluate, and recommend implementation of new technologies, tools, and services.</li>
+
+										<li> Identifying new business opportunities and strategies for enhancing operations as well as slashing expenditures.</li>
+										<li> Served an instrumental role in unit exceeding sales target for 2005 by 10%.</li>
+										<li> Propelled organization's competitive advantage and visibility through new product introduction.</li>
+										<li> Elevated team performance/morale and overall quality of deliverables with the implementation of functional/strategic tools and methodologies as well as establishment of the "Idea Champions" initiative focused on fueling innovation.</li>
+										<li> Enhanced operational processes, products, and communication channels through detailed analysis of internal/external customer satisfaction surveys.</li>
+										<li> Delivered award-winning and highly recognized systems to General Motors, Army Surgeon General, and American Express.</li>
+									</ul>
+								</div>
+							</div> <!-- SYN Table-->
+						</div> <!-- End SYN Tab-->
+
+						<div class="tab-pane fade" id="MU" role="tabpanel">
+						
+							<div class="table" > 
+							    <div class="row black">
+
+									<div class="col-sm-4 black">
+										<div class="company">											
+											<a href="http://www.marquette.edu" class="btn btn-success btn-lg">
+											  <span class="glyphicon glyphicon-th"></span> Marquette University
+											</a>
+										</div>
+									</div>
+
+									<div class="col-sm-3 black">
+										<div class="title">
+											Adjunct Professor
+										</div>
+									</div>
+									<div class="col-sm-2 black">
+										<div class="ans">
+											2011 - Present
+										</div>
+									</div>
+								</div>
+								
+								<div class="row black codetail"> 
+									<span class="glyphicon glyphicon-tasks red" ></span> Marquette University is a Catholic, Jesuit university located near the heart of downtown Milwaukee, Wis., that offers a comprehensive range of majors in 11 nationally and internationally recognized colleges and schools.</br>
+									<span class="glyphicon glyphicon-lamp orange"></span> Teach IT Foundation class for the MBA program, along with participation on CIO Panels for the Business School and Executive MBA program.
+									
+								</div>
+							</div> <!-- MU Table-->
+						</div> <!-- End MU Tab-->
+						
+						<div class="tab-pane fade" id="tech" role="tabpanel">
+						
+							<table> 
+							    <tr class="black codetail"> 
+									<td class="techhead">
+										<span class="glyphicon glyphicon-qrcode red" ></span>  Programming Languages 
+									</td>
+									<td class="techdetail">
+										.Net (VB and C#), C, Pro*C, C++, Java, Cobol, Ceres, Magic, PHP, Node.JS, JavaScript, Swift, Unix Shell scripting, J2EE
+									</td>
+								</tr>
+							    <tr class="black codetail"> 
+									<td class="techhead">
+										<span class="glyphicon glyphicon-cog blue" ></span>  Operating Systems
+									</td>
+									<td class="techdetail">
+										Unix (SCO, Solaris), Linux (Red Hat), Windows, iOS
+									</td>
+								</tr>
+							    <tr class="black codetail"> 
+									<td class="techhead">
+										<span class="glyphicon glyphicon-wrench orange" ></span>  Tools 
+									</td>
+									<td class="techdetail">
+										Visual Studio, Sharepoint, Google Docs, IE, Google Chrome, Firefox, MS Office suite
+									</td>
+								</tr>
+								
+								<tr class="black codetail"> 
+									<td class="techhead">
+										<span class="glyphicon glyphicon-cloud-upload lightblue" ></span>  Cloud 
+									</td>
+									<td class="techdetail">
+										Google toolset, Azure, web hosting, VPS
+									</td>
+								</tr>
+								
+							    <tr class="black codetail"> 
+									<td class="techhead">
+										<span class="glyphicon glyphicon-calendar green" ></span>  Databases
+									</td>
+									<td class="techdetail">
+										Oracle*, SQL Server, MySQL, DB2*, Neo4J 
+									</td>
+								</tr>
+								
+							    <tr class="black codetail"> 
+									<td class="techhead">
+										<span class="glyphicon glyphicon-tasks orange" ></span>  Protocols
+									</td>
+									<td class="techdetail">
+										XML, SMTP, FTP, IMAP
+									</td>
+								</tr>
+										
+							    <tr class="black codetail"> 
+									<td class="techhead">
+										<span class="glyphicon glyphicon-tasks blue" ></span>  Others
+									</td>
+									<td class="techdetail">
+										Bootstrap, JQuery, SDLC, OOP, Wiki, PMP*
+									</td>
+								</tr>
+				
+
+							</table> <!-- Tech Table-->
+						</div> <!-- End Tech Tab-->
+						
+						<div class="tab-pane fade" id="tech2" role="tabpanel">
+						
+							<div class="table" > 
+							    <div class="row black codetail"> 
+									<div class="col-md-4 techhead">
+										<span class="glyphicon glyphicon-tasks red" ></span>  Programming Languages 
+									</div>
+									<div class="col-md-7 ans">
+										.Net (VB and C#), C, Pro*C, C++, Java, Cobol, Ceres, Magic, PHP, Node.JS, JavaScript, Swift, Unix Shell scripting, J2EE
+									</div>
+								</div>
+							    <div class="row black codetail"> 
+									<div class="col-md-4 techhead">
+										<span class="glyphicon glyphicon-tasks red" ></span>  Operating Systems
+									</div>
+									<div class="col-md-7 ans">
+										Unix (SCO, Solaris), Linux (Red Hat), Windows, iOS
+									</div>
+								</div>
+							    <div class="row black codetail"> 
+									<div class="col-md-4 techhead">
+										<span class="glyphicon glyphicon-tasks red" ></span>  Tools 
+									</div>
+									<div class="col-md-7 ans">
+										Visual Studio, Sharepoint, Google Docs, IE, Google Chrome, Firefox, MS Office suite
+									</div>
+								</div>
+										<!--:</b> 
+										<p><b>Tools & Technologies:</b> 
+										<p><b>Databases:</b> Oracle*, SQL Server, MySQL, DB2*, Neo4J 
+										<p><b>Protocols:</b> XML, SMTP, FTP, IMAP
+										<p><b>Others:</b> Bootstrap, JQuery, SDLC, OOP, Wiki, PMP*
+									-->
+
+							</div> <!-- Tech Table-->
+						</div> <!-- End Tech Tab-->
+						
+						
+
+
+						
+						<div class="tab-pane fade" id="Recommendations" role="tabpanel">
+							<section id="carousel">        			
+								<div class="container" style="height:600px">
+									<div class="row">
+										<div class="col-md-10 ">
+											<!--div class="quote"><i class="fa fa-quote-left fa-4x"></i></div-->
+											<div class="carousel slide" id="fade-quote-carousel" data-ride="carousel" data-interval="5000">
+											  <!-- Carousel indicators -->
+											  <ol class="carousel-indicators">
+												<li data-target="#fade-quote-carousel" data-slide-to="0" class="active"></li>
+												<li data-target="#fade-quote-carousel" data-slide-to="1"></li>
+												<li data-target="#fade-quote-carousel" data-slide-to="2"></li>
+												<li data-target="#fade-quote-carousel" data-slide-to="3"></li>
+												<li data-target="#fade-quote-carousel" data-slide-to="4"></li>
+												<li data-target="#fade-quote-carousel" data-slide-to="5"></li>
+											  </ol>
+											  <!-- Carousel items -->
+											  <div class="carousel-inner">
+											  												
+												<div class="active item ans">
+													<div class="profile-circle" style="background-color: rgba(0,0,0,.2);"></div>
+													<div class="card">
+														<div class="card-header">
+															John was a business leader I provided IT service to at Synovate
+														</div>
+														<div class="card-block">
+															<h4 class="card-title">John Vidmar - Chairman Ipsos Public Affairs USA</h4>
+															<p class="card-text">Nelson came to MFI/Synovate through a vendor. We had little experience in databasing and he helped us create some of the largest client databases in company history. One of them is still being used almost two decades after it was initialized. In addition to the healthcare sector, Nelson's work helped us create a whole new practice in Loyalty research which is heavily dependent on databasing. Nelson was also critical in helping us modify internal databases for handling panel sample. That improved sampling efficiency and accuracy. He built a staff of database professionals which he managed and helped move the company into state of the art database practices. He is an accomplished manager and problem solver. I recommend him without reservations.</p>
+															<a href="#" class="btn btn-primary">Go somewhere</a>
+														</div>
+													</div>	
+												</div>
+												
+												<div class="item ans">
+													<div class="profile-circle" style="background-color: rgba(0,0,0,.2);"></div>
+													<div class="card">
+														<div class="card-header">
+															John was a direct report to me at ManpowerGroup
+														</div>
+														<div class="card-block">
+															<h4 class="card-title">John Bergamini - Implementation Services at Pentaho, A Hitachi Group Company</h4>
+															<p class="card-text">Nelson was my director at Manpower. He is the best senior IT manager I've ever had. He quickly grasped complex technical issues and was proactive in empowering his teams to resolve them. At the same time, he understood the value of architecture and investing in integrated solutions. I was really impressed with how he understood my subject area (data) as well as all of the other specialties in IT like ERP tools, custom app development, web and networking. He readily understood the business, they loved working with him and he was invaluable in managing that relationship. I really wanted to travel and get some exposure to different technologies, otherwise I would gladly have worked for Nelson as long as possible.</p>
+															<a href="#" class="btn btn-primary">Go somewhere</a>
+														</div>
+													</div>	
+												</div>
+												<div class="item ans">
+													<div class="profile-circle" style="background-color: rgba(0,0,0,.2);"></div>
+													<div class="card">
+														<div class="card-header">
+															Andy was a board member at Whyte Hirschboeck Dudek
+														</div>
+														<div class="card-block">
+															<h4 class="card-title">Andy Schlidt - Shareholder at Husch Blackwell</h4>
+															<p class="card-text">Nelson is a strong IT leader, strategic thinker and driver of performance. Nelson managed our organization through substantial technology upgrades by building strong and motivated teams with a service-oriented culture. He is forward thinking and able to translate creative ideas into results that better serve the client.</p>
+															<a href="#" class="btn btn-primary">Go somewhere</a>
+														</div>
+													</div>	
+												</div>												
+												
+												<div class="item ans">
+													<div class="profile-circle" style="background-color: rgba(0,0,0,.2);"></div>
+													<div class="card">
+														<div class="card-header">
+															Hashmat was a colleague at Market Probe
+														</div>
+														<div class="card-block">
+															<h4 class="card-title">Hashmat Rohian - Strategy and Analytics professional</h4>
+															<p class="card-text">Nelson is a detail-oriented manager, a great mentor and facilitator who never loses sight of the strategic objective. I appreciate working with Nelson and reporting to him. He is team-work oriented and very helpful. He truly exhibits thought leadership. He allows, encourages and motivates his team to develop and grow. In project works, he is always extremely co-operative and is very willing to share his broad experience and pushes for best solutions. He will always be a wonderful asset to any organization/team and brings positive influences to the team to keep moving towards the common goals. Nelson's technical skills and expertise are an asset and complement his professionalism and positive attitude he reflects at work. His work-ethic and positive attitude are a continuing source of inspiration to me. I highly recommend Nelson as an addition to any organization; and certainly he will be a valuable asset and will bring success to a business.</p>
+															<a href="#" class="btn btn-primary">Go somewhere</a>
+														</div>
+													</div>	
+												</div>												
+
+												<div class="item ans">
+													<div class="profile-circle" style="background-color: rgba(0,0,0,.2);"></div>
+													<div class="card">
+														<div class="card-header">
+															Steve was a key vendor for Synovate
+														</div>
+														<div class="card-block">
+															<h4 class="card-title">Steve Werner - Strategic Client Development Specialist</h4>
+															<p class="card-text">I had the pleasure of working with Nelson at one of our largest clients. He has an immense depth to his technical knowledge and experience. He was always available to help others while he lead the development of a very complex sampling system. He managed both the client and our team of consultants. Nelson knows how to produce exceptional business value from his team, while building genuine friendships with each team member. I enjoyed working with Nelson and he is an exceptional asset to any company.</p>
+															<a href="#" class="btn btn-primary">Go somewhere</a>
+														</div>
+													</div>	
+												</div>
+												
+												<div class="item ans">
+													<div class="profile-circle" style="background-color: rgba(0,0,0,.2);"></div>
+													<div class="card">
+														<div class="card-header">
+															Richard was a key member of my team at InfoPower Systems
+														</div>
+														<div class="card-block">
+															<h4 class="card-title">Richard Paul - Team Lead at AppDynamics</h4>
+															<p class="card-text">I had the pleasure of working with Nelson at one of our largest clients. He has an immense depth to his technical knowledge and experience. He was always available to help others while he lead the development of a very complex sampling system. He managed both the client and our team of consultants. Nelson knows how to produce exceptional business value from his team, while building genuine friendships with each team member. I enjoyed working with Nelson and he is an exceptional asset to any company.</p>
+															<a href="#" class="btn btn-primary">Go somewhere</a>
+														</div>
+													</div>	
+												</div>
+											</div>
+										</div>							
+									</div>
+								<!--/div-->
+							</section>
+						</div> <!-- Recommendations -->
+						
+						<div class="tab-pane fade" id="Education" role="tabpanel">
+							<div class="card-deck bord">
+								<div class="card">
+									<a class="centerit" href="http://www.niu.edu"><img class="card-img-top img-responsive" src="images/NIUhuskies.png" alt="Card image cap"></img></a>
+									<div class="card-block">
+									  <h2 class="card-title">Northern Illinois University</h2>
+									  <p class="card-text">Masters of Business Administration</p>
+									</div>
+									<div class="card-footer">
+									  <small class="text-muted">3.95 GPA</small>
+									</div>
+								</div>
+								<div class="card">
+									<a class="centerit" href="http://www.unisa.co.za/"><img class="card-img-top img-responsive" src="images/Unisa.png" alt="Card image cap"></img></a>
+									<div class="card-block">
+									  <h2 class="card-title">University of South Africa</h2>
+									  <p class="card-text">BSc Computer Science</p>
+									</div>
+									<div class="card-footer">
+									  <small class="text-muted">3.5 GPA</small>
+									</div>
+								</div>  
+								<div class="card">
+									<a class="centerit" href="http://www.depaul.edu"><img class="card-img-top img-responsive" src="images/depaul.png" alt="Card image cap"></img></a>
+									<div class="card-block">
+									  <h2 class="card-title">DePaul University</h2>
+									  <p class="card-text">Masters Software Engineering (Incomplete)</p>
+									</div>
+									<div class="card-footer">
+									  <small class="text-muted red">Stalled when I left Chicago</small>
+									</div>
+								</div>  
+								<div class="card">
+									<a class="centerit" href="http://www.vzap.co.za/"><img class="card-img-top img-responsive" src="images/vzap.png" alt="Card image cap"></img></a>
+									<div class="card-block">
+									  <h2 class="card-title">Van Zyl & Pritchard</h2>
+									  <p class="card-text">Top Structured Programming School in South Africa.</p>
+									</div>
+									<div class="card-footer">
+									  <small class="text-muted">Finished top of class 1988</small>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="tab-pane fade" id="lifemap" role="tabpanel">
+							<div>
+								<img src="images/Lifemap.png"/>
+							</div>
+						</div>
+						
+						<div class="tab-pane fade" id="interests" role="tabpanel">
+							<div class="container" style="height:650px">
+								<div class="row">
+									<div class="col-md-4 col-sm-6"> <!-- Learning card -->
+										<div class="card-container">
+											<div class="card">
+												<div class="front">
+													 <div class="cover">
+														 <img src="images/singularity.jpg"/>
+													 </div>
+													 <div class="user">
+														 <img class="img-circle" src="images/ted.jpg"/>
+													 </div>
+													 <div class="content">
+														 <div class="main">
+															 <h3 class="name">Learn</h3>
+															 <p class="profession">Life long learner</p>
+
+															 <p class="text-center">I love learning - about a wide variety of topics that have piqued my interest, through numerous modes.</p>
+														 </div>
+														 <div class="footer">
+															 <div class="rating">
+																 <i class="fa fa-mail-forward"></i> Hover on the picture ....
+															 </div>
+														 </div>
+													 </div>
+												</div> <!-- end front panel -->
+
+
+												<div class="back">
+													<div class="header">
+														<h4 class="motto">A good book leaves you wanting to reread the book. A great book compels you to reread your own soul - Richard Flanagan</h4>
+													</div>
+													<div class="content">
+														<div class="main">
+															<h3 class="text-center">A hungry mind</h3>
+															<p class="text-center">Learning about me, other peoples realities, how to learn, leadership, technology, business, teaching ...... through discussion, books, online teachings, podcasts, film, conferences, industry think tanks, SIM sessions, vendor events, consultants, audio books, TED talks.</p>
+
+														</div>
+
+														
+														 <div class="footer">
+															 <div class="social-links text-center">
+																 <a href="https://www.goodreads.com/work/quotes/25086415" class="amazon"><i class="fa fa-amazon fa-fw"></i></a>
+																 <a href="https://www.youtube.com/watch?v=iG9CE55wbtY&list=PL70DEC2B0568B5469" class="youtube"><i class="fa fa-youtube fa-fw"></i></a>
+															 </div>
+														 </div>
+													</div>
+												</div> <!-- end back panel -->
+											</div> <!-- end card -->
+										</div> <!-- end card-container -->
+									</div> <!-- end col md-4 -->
+
+									<div class="col-md-4 col-sm-6"> <!-- Travel card -->
+										<div class="card-container">
+											<div class="card">
+												<div class="front">
+													 <div class="cover">
+														 <img src="images/glencoe.JPG"/>
+													 </div>
+													 <div class="user">
+														 <img class="img-circle" src="images/mexico.jpg"/>
+													 </div>
+													 <div class="content">
+														 <div class="main">
+															 <h3 class="name">Travel</h3>
+															 <p class="profession">Have lived on 3 continents</p>
+
+															 <p class="text-center">My life has seen a variety of places and lifestyles, which I believe lends itself to a balanced outlook on life and the ability to grow. </p>
+														 </div>
+														 <div class="footer">
+															 <div class="rating">
+																 <i class="fa fa-mail-forward"></i> Hover on the picture ....
+															 </div>
+														 </div>
+													 </div>
+												</div> <!-- end front panel -->
+
+
+												<div class="back">
+													<div class="header">
+														<h5 class="motto">A good traveller has no fixed plans, and is not intent on arriving - Lao Tzu</h5>
+													</div>
+													<div class="content">
+														<div class="main">
+															<h3 class="text-center">World traveller</h3>
+															<p class="text-center">Been to many different places but my travel bucket list just keeps getting longer. The more I learn, the more I know how little I know. Click on the Lifemap to see my journey so far. Next up - South America.</p>
+
+														</div>
+
+														
+														 <div class="footer">
+															 <div class="social-links text-center">
+																 <a href="https://twitter.com/mashlifestyle/lists/travel-tweeters" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+																 <a href="http://www.worldofwanderlust.com/25-places-must-visit-south-america/" class="twitter"><i class="fa fa-rocket fa-fw"></i></a>
+															 </div>
+														 </div>
+													</div>
+												</div> <!-- end back panel -->
+											</div> <!-- end card -->
+										</div> <!-- end card-container -->
+									</div> <!-- end col md-4 -->
+									
+									<div class="col-md-4 col-sm-6">
+										<div class="card-container">
+											<div class="card">
+												 <div class="front">
+													 <div class="minmargbottom cover minmargbottom">
+														 <img src="images/thekop.jpg"/>
+													 </div>
+													 <div class="minmargbottom user minmargbottom">
+														 <img class="img-circle minmargbottom" src="images/liverpool.png"/>
+													 </div>
+													 <div class="minmargtop content minmargtop">
+														 <div class="main minmargtop">
+															 <h3 class="minmargtop name minmargtop">Football (aka Soccer)</h3>
+															 <p class="profession">Former player, passionate fan</p>
+
+															 <span class="text-center">Played and loved the game from the moment I could walk. Lived my dream to play professionally.</span>
+														 </div>
+														 <div class="footer">
+															 <div class="rating">
+																 <i class="fa fa-mail-forward"></i> Hover on the picture ....
+															 </div>
+														 </div>
+													 </div>
+												</div> <!-- end front panel -->
+												<div class="back">
+													 <div class="header">
+														 <h5 class="motto">You'll never walk alone.</h5>
+													 </div>
+													 <div class="content">
+														 <div class="main">
+															 <h3 class="text-center minmargbottom">Professional Soccer Career</h3>
+															 <div class="table">
+																<div class="row">
+																	<div class="col-sm-2">
+																		<img src="images/southafrica.png" height="20px" alt="South Africa"/>
+																	</div>
+																	<div class="col-sm-8 footname">
+																		<h4>Western Tigers</h4>
+																	</div>
+																	<div class="col-sm-1">
+																		<img src="images/que.jpg" height="20px"/>
+																	</div>
+																</div>
+																
+																<div class="row">
+																	<div class="col-sm-2">
+																		<img src="images/england.png" height="20px" alt="England" />
+																	</div>
+																	<div class="col-sm-8 footname">
+																		<h4>Arsenal FC</h4>
+																	</div>
+																	<div class="col-sm-1">
+																		<img src="images/arsenal.jpg" height="20px" />
+																	</div>
+																</div>
+																
+																<div class="row">
+																	<div class="col-sm-2">
+																		<img src="images/scotland.jpg" height="20px" alt="Scotland" />
+																	</div>
+																	<div class="col-sm-8 footname">
+																		<h4>Partick Thistle</h4>
+																	</div>
+																	<div class="col-sm-1">
+																		<img src="images/partick.jpg" height="20px" />
+																	</div>
+																</div>
+																
+																<div class="row">
+																	<div class="col-sm-2">
+																		<img src="images/scotland.jpg" height="20px" alt="Scotland" />
+																	</div>
+																	<div class="col-sm-8 footname">
+																		<h4>Falkirk FC</h4>
+																	</div>
+																	<div class="col-sm-1">
+																		<img src="images/falkirk.jpg" height="20px" />
+																	</div>
+																</div>
+																
+																<div class="row">
+																	<div class="col-sm-2">
+																		<img src="images/southafrica.png" height="20px" alt="Scotland" />
+																	</div>
+																	<div class="col-sm-8 footname">
+																		<h4>Grinaker Rangers</h4>
+																	</div>
+																	<div class="col-sm-1">
+																		<img src="images/que.jpg" height="20px" />
+																	</div>
+																</div>
+																
+																<div class="row">
+																	<div class="col-sm-2">
+																		<img src="images/southafrica.png" height="20px" alt="Scotland" />
+																	</div>
+																	<div class="col-sm-8 footname">
+																		<h4>Dynamos</h4>
+																	</div>
+																	<div class="col-sm-1">
+																		<img src="images/que.jpg" height="20px" />
+																	</div>
+																</div>
+																<div class="row">
+																	<div class="col-sm-2">
+																		<img src="images/southafrica.png" height="20px" alt="Scotland" />
+																	</div>
+																	<div class="col-sm-8 footname">
+																		<h4>Wits University</h4>
+																	</div>
+																	<div class="col-sm-1">
+																		<img src="images/wits.jpg" height="20px" />
+																	</div>
+																</div>
+															</div>
+
+															 <!--div class="stats-container minmargtop">
+																 <div class="stats">
+																	 <h4>7</h4>
+																	 <p>
+																		 Pro Clubs
+																	 </p>
+																 </div>
+																 <div class="stats">
+																	 <h4>280</h4>
+																	 <p>
+																		 Top flight appearances
+																	 </p>
+																 </div>
+																 <div class="stats">
+																	 <h4>0</h4>
+																	 <p>
+																		 Goals conceded (I wish)
+																	 </p>
+																 </div>
+															 </div-->
+
+														 </div>
+														
+														 <div class="footer">
+															 <div class="social-links text-center">
+																 <a href="https://www.linkedin.com/in/nelsonstill/" class="linkedin"><i class="fa fa-linkedin fa-fw"></i></a>
+
+															 </div>
+														 </div>
+													</div>
+												</div> <!-- end back panel -->
+											</div> <!-- end card -->
+										</div> <!-- end card-container -->
+									</div> <!-- end col md-4 -->
+								 
+								</div> <!--end of card row-->
+							</div>
+						</div> <!-- End of Interests DIV-->
+						
+					</div> <!--End of tab content-->
+					
+			  </div> <!-- Tab Panel-->
+			</div> <!-- col-sm-12-->
+		</div> <!-- top row-->
+	</div> <!--container-->
+	
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show')
+  })
+  
+  $(document).ready(function () {
+        $('#myTab a[href="#char"]').tab('show');           
+    });
+});
+</script>
+
+	
+</body>
+</html>

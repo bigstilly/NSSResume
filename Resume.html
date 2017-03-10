@@ -1,0 +1,580 @@
+<!doctype html>
+<html>
+<head>
+    <title>Nelson Still Resume</title>
+		
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+	<style type="text/css">
+		#dragger {
+			width:50px;
+			height:50px;
+			border: 1px solid red;
+		}
+		#cont {
+			left:200px;
+			top:50px;
+			width:600px;
+			height:300px;
+			border: 1px solid red;
+		}
+		
+		body {
+			font-family: Helvetica Sans-Serif;
+		}
+		
+		#topper {
+			position: fixed;
+			left:0px;
+			top:0px;
+			width:100%;
+			height:110px;
+			padding: 10px auto;
+			margin-bottom: 10px;
+			z-index: 999;
+			background-color: lightgrey;
+		}
+
+		#brand {
+			position: relative;
+			left:10%;
+			top:5px;
+			width:80%;
+			height:30px;
+			border-bottom: 1px solid black;
+			float: top;
+			padding: 10px auto;
+		}
+		
+		.panel-company {
+			font-family: Helvetica Sans-Serif;
+			font-size: 95%;
+			color: blue;
+			border: 1px solid lightgrey;
+			border-radius:2px;
+		}
+		
+		h1 {
+			position: relative;
+			font-family: Helvetica Sans-Serif;
+			font-size: 130%;
+			color: red;
+			font-weight: bold;
+			width: 18%;
+			float: left;
+			margin: 1px 10px 10px 5px;
+		}
+		
+		h2 {
+			font-family: Helvetica Sans-Serif;
+			font-size: 125%;
+			color: orange;
+			font-weight: bold;
+			margin-top:5px;
+			margin-bottom:5px;
+		}
+		
+		h3 {
+			font-family: Helvetica Sans-Serif;
+			font-size: 120%;
+			color: teal;
+			font-weight: bold;
+		}
+		
+		h4 {
+			font-family: Helvetica Sans-Serif;
+			font-size: 90%;
+		}
+		
+		.myheading {
+			font-family: Helvetica Sans-Serif;
+			font-size: 125%;
+			background-color: orange;
+			color: white;
+			font-weight: bold;
+			margin-top:5px;
+			margin-bottom:15px;
+			padding: 5px;
+			width: 100%;
+			text-align:center;
+			border-radius: 8px;
+		}
+		
+		#statement {
+			position: relative;
+			font-family: Helvetica Sans-Serif;
+			font-size: 100%;
+			color: black;
+			width: 80%;
+			float: right;
+			margin-top: 5px;
+		}
+		
+		#lefter {
+			position: relative;
+			width: 100%;
+			float: left;
+			top: 100px;
+			margin-left: 5px;
+			margin-top: 5px;
+		}
+		
+		#righter {
+			position: relative;
+			width: 100%;
+			margin-top: 115px;
+		}
+		
+		#XXXsummary {
+			position: relative;
+			font-family: Helvetica Sans-Serif;
+			font-size: 110%;
+			font-weight: bold;
+			color: blue;
+			width: 100%;
+			
+			float: left;
+			border: 2px solid black;
+			border-radius: 5px;
+			padding: 5px;
+			margin: 10px auto;
+			background-color: #E9EFF0;
+		}
+		
+		.summaryDiv {
+			position: relative;
+			font-family: Helvetica Sans-Serif;
+			font-size: 100%;
+			font-weight: bold;
+			color: grey;
+			width: 100%;
+			height:100px;
+			float: left;
+			border: 2px solid black;
+			border-radius: 5px;
+			padding: 5px;
+			margin: 10px auto;
+
+		}
+		
+			/*		background-color: #E9EFF0;*/
+		#links {
+			position: relative;
+			font-size: 100%;
+			color: purple;
+			width: 100%;
+			height:120px;
+			float: right;
+			border: 1px solid lightblue;
+			border-radius: 10px;
+			margin-right: 10px;
+			margin-top: 10px;
+		}
+		
+		#call {
+			font-family: Helvetica Sans-Serif;
+			font-size: 90%;
+			color: black;
+			font-weight: bold;
+			margin: 9px auto;
+			text-align: center;
+			padding: 5px auto;
+		}
+		
+		#traits {
+			position: relative;
+			width: 100%;
+			padding: 5px auto;
+			margin: 0px;
+			font-size: 110%;
+		}
+		
+		.ul-company {
+			color: grey;
+			font-size: 90%;
+		}
+		a {
+			color: black;
+			text-decoration: none;
+		}
+		
+		.inta {
+			font-size: 120%;
+			color: black;
+			text-decoration: none;
+		}
+		
+		.boxYellow {
+			width:100%;
+			background-color: lightgreen;
+			border-radius: 10px;
+			padding:1px 5px;
+			margin-top:10px;
+		}
+		
+		.boxAqua {
+			width:100%;
+			background-color: #80FFD0;
+			border-radius: 10px;
+			padding:1px 5px;
+			margin-top:10px;
+		}
+		
+		.label100 {
+			font-size: 100%;
+			width:140px;
+			align: center;
+			margin-top: 4px;
+			margin-right: auto;
+			margin-left: auto;
+		}
+		
+		.LIlinks{
+			color: dargkgreen;
+			font-size: 140%;
+			text-decoration: none;
+			width:100px;
+		
+			margin-right: auto;
+			margin-left: auto;
+		}
+		
+		.LIlinks2:hover{
+			color: orange;
+			border:1px solid orange;
+			font-size: 140%;
+			text-decoration: none;
+			margin-right: auto;
+			margin-left: auto;
+		}
+		
+		ul#myList {
+			color: green;
+			list-style-type:square;
+			font-size: 90%;
+
+		}
+		
+		.anchor:before {
+		  content:"";
+		  display:block;
+		  height:120px; 
+		  margin:-120px 0 0; 
+		}
+
+		li:before {
+
+			color: red;
+		}
+		.label a {
+			color: white;
+		}
+		.label-purple {
+			background-color: purple;
+		}
+	</style>
+		
+  <script>
+
+  </script>
+  
+</head>
+
+<body data-spy="scroll" data-target="#navbar-example">
+
+	<div id="topper">
+		<div id="brand">
+			<h1>Nelson Still</h1>
+			<span id="statement">DRIVING BUSINESS THROUGH TECHNOLOGY WITH LEADERSHIP, VISION AND COLLABORATION</SPAN>
+		</div>
+		<div id="call">
+			<span >Milwaukee, WI &diams; Nelson.Still@gmail.com &diams; </span>
+			<a href="http://www.linkedin.com/in/nelsonstill">LinkedIn</a>
+		</div>
+		
+		<nav class="navbar navbar-default" id="navbar-example" data-offset="100">
+		<ul class="nav nav-tabs"  role="tablist">
+			 <li class="nav-item nav-link active"><a href="#summary">Summary</a></li>
+			 <li class="nav-item nav-link "><a href="#traits">Traits</a></li>
+			 <li class="dropdown">
+				  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Employment History<span class="caret"></span></a>
+				  <ul class="dropdown-menu">
+					<li><a href="#MPG">ManpowerGroup</a></li>
+					<li><a href="#WHD">Whyte Hirschboeck Dudek</a></li>
+					<li><a href="#MP">Market Probe</a></li>
+					<li><a href="#SYN">Synovate</a></li>
+					<li><a href="#IS">InfoPower Systems</a></li>
+					<li role="separator" class="divider"></li>
+					<li><a href="#UCS">Universal Computer Systems (South Africa)</a></li>
+					<li role="separator" class="divider"></li>
+					<li><a href="#MU">Marquette University (Adjunct Professor)</a></li>
+				  </ul>
+			</li>
+			<li class="nav-item nav-link "><a href="#lifemap">LifeMap</a></li>
+			<li class="nav-item nav-link "><a href="#intlinks">Interesting Links</a></li>
+			<li class="nav-item nav-link "><a href="#skills">Tech Skills</a></li>
+		</ul>
+		</nav>
+	</div>
+	
+	<div style="clear: both;"></div>
+	<div class="container-fluid">
+	  <div class="row anchor" id="summary" >
+		  <div class="col-sm-9">
+			<div id="lefter" >
+			
+			<div class="summaryDiv">
+				Business savvy technology leader who has helped to drive both business and technology strategy, through understanding the business challenges and collaborating with business leaders to identify solutions. 
+				Consistently found ways to drive competitive advantage and operational efficiencies. Able to establish the optimal technology, processes and skillsets needed to meet the challenges of the business.
+				Great believer in the power of teamwork and empowering people to fulfill their potential. Servant leadership enabling enthusiastic customer service.
+			</div>
+			
+				
+			<p></p>
+			<div style="clear: both;"></div>
+			
+			<div class="anchor" id="traits">
+			<h2  id="traits" class="myheading">Key Characteristics</h2>
+			  <h3>Vision</h3>
+			  <div>
+				<ul id="myList">
+					<li>Identified industry shifts and worked with C-Level executives in elite think tank, to help promote some challenging ideas.</li>
+					<li>Brought about a new and competitive business model to market research firm with real-time dashboards that tied into customer operations.</li>
+					<li>Created a generic sampling system to enable implementation of large scale, automated customer satisfaction programs.</li>
+					<li>Worked with business leaders to create a workflow tool that enabled clients to upload contracts, provide immediate price and timing, kick off the internal processes to perform the work and return to the client.</li>
+				</ul>
+			  </div>
+			  
+			  <h3>Leadership</h3>
+			  <div>
+				<ul id="myList">
+					<li>When I took a senior IT position at a company that had gone through a few years of down-sizing, I had to rebuild numerous teams in both personnel and morale terms. Working with some great recruiters, I was able to bring in some excellent people and get those teams performing at a high level.</li>
+					<li>I led the largest account for the consulting company I worked for and helped to grow the account 30% by promoting new ideas with the client.</li>
+					<li>In 2009, I attended the SIM RLF (Regional Leadership Forum) which is considered the top IT leadership program in the country.</li>
+					<li>Current President of <a href="http://www.simnet.org/wisconsin">SIM Wisconsin</a>.</li>
+				</ul>
+				
+			  </div>
+			  <h3>Collaboration</h3>
+			  <div>
+				<ul id="myList">
+					<li>Improved productivity 32% with no external spend by working with VP of data acquisition to optimize available resources. </li>
+					<li>Worked with CEO of client, and project team he later set up, to implement an innovation that automated a process to provide quality and performance that was previously inconceivable.</li>
+					<li>Created a strong working relationship with a key vendor by sharing with them some of the integrations that enabled us to very accurately staff our call centers. The vendor had us demonstrate what we were able to do with their CEO and technical director.</li>
+				</ul>
+				
+				</p>
+			  </div>
+
+			  <h3>Innovation</h3>
+			  <div>
+				<ul id="myList">
+					<li>Built feature rich and complex sampling engine, with ad-hoc query building, reporting, workflow. This replaced, and improved upon, a mainframe-system that was 20 years in the making.</li>
+					<li>Built customer satisfaction system to collect and aggregate data, with sophisticated ddata-driven dashboards, providing near real-time data. Used by some of the biggest banks in the country.</li>
+					<li>Created resource planning tool to accurately track resource usage and enable tight control of project costs and efficiency</li>
+					<li>Developed a distribution system to control and monitor release of software updates, DDL, data feeds.</li>
+					<li>Created a plant simulator for multinational chemical and explosives company. This significantly reduced cost and time of sourcing suitable candidates for a stressful job with high turnover.</li>
+				</ul>
+				
+				</p>
+			  </div>  
+			</div> <!--Traits-->
+
+			<div class="container">
+			<h2 id="traits" class="myheading">Employment History</h2>
+			<div class="row anchor" id="MPG" style="margin-top:5px;">
+				<div  class="panel panel-danger ">
+				  <div class="panel-heading">ManpowerGroup &diams; Milwaukee, Wisconsin  &diams;  Director, NA IT  &diams;  November 2014 - Present</div>
+				  <div class="panel-body">
+				  <img src="images/MPG.png"/>
+				  <span class="panel-company">Global leader in staffing. $20B revenue, approximately 32,000 employees. Milwaukee HQ, with approximately 500 branches in NA, 3,900 worldwide.</span></br>
+					<h4>Oversee various teams, including Infrastructure, Enterprise Architecture, ERP, Business Intelligence, Business Analysis and Software Development. Work with business technology partners to ensure we are aligned on direction and priority.</h4>
+					<ul class="ul-company">
+						<li> Worked to stop the rot after 2 years of right-sizing before I arrived. Had to rebuild some teams from scratch, brought in and promoted some excellent leaders to create a productive environment and improve morale.</li>
+						<li> Meet weekly with the CIO and the other directors to ensure alignment.</li>
+						<li> Brought the infrastructure and enterprise architecture function under an excellent new leader who has brought energy and alignment, with numerous high profile projects progressing well.</li>
+						<li> Moved our main data center to a managed service provider - this was a huge undertaking that had minimal impact on business operations and a big impact on the bottom line.</li>
+						<li> Collaborating with business leaders and sales analysts to greatly improve our business intelligence offerings, while empowering users with intuitive self-service tools.</li>
+						<li> Restructured the ERP team and looking to streamline our back-office operations further.</li>
+						<li> Working on creating an environment that enables us to more quickly action new ideas from the business. Currently running a pilot program in Azure.</li>
+					</ul>
+				  </div>
+				</div>
+			</div> <!-- Row -->
+			
+			<div class="row anchor" id="WHD">
+				<div class="panel panel-warning">
+				  <div class="panel-heading">Whyte Hirschboeck Dudek &diams; Milwaukee, Wisconsin  &diams;  IT Director  &diams;  February 2013 - November 2014</div>
+				  <div class="panel-body">
+				  <img src="images/HB.png"/>
+					<span class="panel-company">Large, established law firm, with over 300 employees, that has been around for 70 years. HQ in Milwaukee with a sizeable office in Madison.</span></br>
+					<h4>Oversee various departments, including IT, Records, Library and Administrative Services. The majority of my time and responsibility rests with the IT Department which consists of 15 professionals mainly at the Milwaukee office.</h4>
+						<ul class="ul-company">
+						<li>Meet weekly with the CE and the other directors to develop strategy and ensure alignment.</li>
+						<li>Attend monthly Practice Group meetings to provide updates on initiatives and to encourage input on anything that can positively impact productivity and client service.</li>
+						<li>Work with IT managers on the network, infrastructure, software and training side to ensure we are implementing solutions that truly make the firm more productive.</li>
+						<li>Rolled out Sharepoint 2010 with a custom dashboard integrated with financial and CRM systems for which we have recieved quiet recognition from industry vendors.</li>
+						<li>Achievements over the last 18 months include: Sharepoint 2010, upgrade to Windows 7 and Office 2010 with walk-around interns, Exchange 2010, quick training video initiative, mobile platform roll-out, security audits and upgrades, new WiFi network, core switch upgrade, financial system upgrade. Cisco phone upgrade, Litigation support system, West KM, Sharefile </li>
+						<li>Initiatives currently in progress: Monitor Suite Business Intelligence, VDI pilot, Business Development and Project Management strategy (CLOC, LTC4, Sky Analytics).</li>
+						<li>Awarded SIM Wisconsin IT Executive of the Year 2013 (Corporate Category) in recognition of the achievements of the department.</li>
+						</ul>
+				  </div>
+				</div>
+			</div> <!-- Row -->
+
+			<div class="row anchor" id="MP">
+				<div class="panel panel-primary">
+				  <div class="panel-heading">Market Probe &diams; Milwaukee, Wisconsin  &diams;  Senior Vice President, Chief Information Officer &diams;  May 2007-January 2012</div>
+				  <div class="panel-body">
+				  <img src="images/MP.png"/>
+					<span class="panel-company">Rapidly growing provider of market research services (4th fastest globally), through acquisition and organic growth. 12 offices in 9 countries, 1,300 employees.</span></br>
+					<h4>Recruited to build and lead top performing technical development and support teams focused on creation of both client-facing solutions as well as in-house tools to improve efficiency and management. </h4>
+						<ul class="ul-company">
+						<li>Drove systems design to support generic solutions to improve standard solution offering and reduce customized development. These solutions include web-enabled, data-centric software solutions. </li>
+						<li>Improve project bidding mechanism, enable knowledge sharing across the enterprise and make presentations/recommendations to client's senior leaders. </li>
+						<li>Supervise a diverse team of 18 technical specialists locally, including infrastructure, telephony and software teams - as well as another 12 developers in India. Integrate technology of companies recently acquired.</li>
+						<li>As Division Head, I form part of senior management team with functions including country manager meetings, interviewing senior candidates, assessing acquisitions and major RFPs.</li>
+						<li>Heavily involved in all major proposals, presentations and initial high level system design.</li>
+						<li>Greatly enhanced department's ability to create industry leading client-facing web-based tools. Web-based Dashboards now considered a key competitive advantage for the company.</li>
+						<li>Working with call center team to improve efficiencies and evaluate vendor offerings, including CATI software solutions. Internal solution to improve efficiency of key project by 32%.</li>
+						<li>Spearheaded initiative to standardize CATI (and CAWI) system in all North American call centers. Largest technology investment in company's history - realized efficiency improvement up to 60%. A centralized solution that is highly integrated with sampling and reporting systems. </li>
+						<li>Established demo web sites and IT capability, FAQ and RFP documentation for client handouts.</li>
+						<li>Improved working relationship between IT and the various business departments it supports by establishing relationships and clear communication channels with key individuals.</li>
+						<li>Broadened skill sets of tenured IT employees through training and mentor program.</li>
+						<li>Implemented project management practices and tools to help manage projects using local and offshore resources. Collaboration tools include JIRA, wiki, Sharepoint, IM, Skype.</li>
+						<li>Elevated team performance/morale and overall quality of deliverables with the implementation of functional/strategic tools and methodologies - including project tracking and issue tracking.</li>
+						<li>Overseeing key technology initiatives - these include migration of systems to SQL Server and .Net (C# and Visual Basic), virtualization, disaster recovery (including a documented test of our detailed BCP), WAN optimization, Silverlight development.</li>
+						<li>Working with other business units to restructure part of organization to ensure efficiency and employee satisfaction and contribution.</li>
+						</ul>
+				  </div>
+				</div>
+			</div> <!-- Row -->
+			
+			<div class="row anchor" id="SYN">
+				<div class="panel panel-success">
+				  <div class="panel-heading">Synovate &diams; Chicago, Illinois  &diams;  Vice President Technology, ViewsNet  &diams;  November 2004 - May 2007</div>
+				  <div class="panel-body">
+				  <img src="images/IPSOS.png"/>
+				  <span class="panel-company">Leading provider of market research services (8th largest globally). 99 offices and 5,200 employees in 47 countries. Revenues exceed $800M annually.</span></br>
+					<h4>Promoted to orchestrate development of the organization's original panel management and sampling software to support a new business unit. Coordinate global project teams charged with solutions creation focused on operational/technical strategies integrated in the software development program. Establish project plans ranging from analysis, software development, and integration to database upgrades, data migration, database centralization, and software acquisition. Liaise with user groups to identify necessary system modifications and discrepancies. Research, evaluate, and recommend implementation of new technologies, tools, and services, identifying new business opportunities and strategies for enhancing operations as well as slashing expenditures.</h4>
+					<ul class="ul-company">
+						<li> Cultivate and maintain productive relationships with vendors, review proposals, and perform due diligence. Generate comprehensive technical presentations/recommendations to senior leaders in support of new ventures. Lead efforts of on-shore/off-shore teams throughout development and integration of new system components. Provide planning and reconciliation of software development and maintenance budgets. Support merger of newly acquired companies through assessment/identification of technical resources that could add value to the enterprise.</li>
+						<li> Fueled corporate revenues by spearheading successful launch of software for new business unit in 6 Western European countries. Delivered panel management website as well as sampling website with database/backend engine, broadcast, and email management. </li>
+						<li> Served an instrumental role in unit exceeding sales target for 2005 by 10%.</li>
+						<li> Propelled organization's competitive advantage and visibility through new product introduction.</li>
+						<li> Elevated team performance/morale and overall quality of deliverables with the implementation of functional/strategic tools and methodologies as well as establishment of the "Idea Champions" initiative focused on fueling innovation.</li>
+						<li> Enhanced operational processes, products, and communication channels through detailed analysis of internal/external customer satisfaction surveys.</li>
+						<li> Delivered award-winning and highly recognized systems to General Motors, Army Surgeon General, and American Express.</li>
+
+					</ul>
+				  </div>
+				</div>
+			</div> <!-- Row -->
+
+			<div class="row">
+				<div class="panel panel-info">
+				  <div class="panel-heading">Synovate &diams; Chicago, Illinois  &diams;  Director of Applications  &diams;  March 2004 - November 2004</div>
+				  <div class="panel-body">
+				  <img src="images/IPSOS.png"/>
+				  <span class="panel-company">Leading provider of market research services (8th largest globally). 99 offices and 5,200 employees in 47 countries. Revenues exceed $800M annually.</span></br>
+					<h4>Recruited to build and lead top performing technical development/support teams focused on the creation of web-enabled, data-centric software solutions. Drove systems design to support customized business platform, contributing to quality, timely, and budget delivery of projects. Generated detailed cost estimates, bid documentation (solution text, transition processes, scheduling), and presentations/recommendations to client's senior leaders. Supervised a team of 14 technical specialists, ensured seamless integration of new tools into existing systems, liaised with outsourced vendors throughout software development lifecycle, and enforced compliance with guidelines/regulations/priorities.</h4>
+					<ul class="ul-company">
+						<li>Captured additional revenues through skillful cultivation and enhancement of relationships with potential clients, supporting pre-sales customer site visits, proposal development, and due diligence efforts.</li>
+						<li>Enhanced performance of development team through innovative conceptualization and implementation of functional/strategic tools, methodologies, and guidelines.</li>
+						<li>Spearheaded award-winning development operations for 3 major clients.</li>
+						<li>Led successful turnaround of a large-scale, at risk project for American Express covering 24 countries, 18 languages, and 156 users. This project achieved Aegis award for superior performance and contributions.</li>
+						<li>Saved a key account through careful review of client requirements/needs and implementation of new plans/strategies to ensure deliverables compliant with individual standards.
+						<li>Orchestrated successful migration of assigned unit to a new corporate location, achieving relocation of assigned resources on time.</li>
+					</ul>
+				  </div>
+				</div>
+			</div> <!-- Row -->
+
+			<div class="row anchor" id="IS">
+				<div class="panel panel-danger">
+				  <div class="panel-heading">InfoPower Systems &diams; Deerfield, Illinois  &diams;  Technical Director  &diams;  February 1997 - March 2004</div>
+				  <div class="panel-body">
+				  <span class="panel-company">Provider of software development and consulting services to diverse clientele base encompassing MarketFacts (Synovate) and Allstate. Annual revenues total over $5M.</span></br>
+					<h4>Delivered advanced management of the organization's largest client encompassing coordination of more than 14 consultants working on site. Provided expert consulting services to clients in the areas of best practices, database/application design, and integration issues. Introduced system enhancements, managed mission-critical/complex projects, and supported clients on the attainment of technical goals. Facilitated expense reductions, troubleshooting of technical issues, and identification of new business opportunities through expert recommendations to senior leaders.</h4>
+					<ul class="ul-company">
+						<li>Supported over $57M revenues for client, delivering 40% of US profits with the creation of a web-based ad-hoc reporting, sampling, and balancing system-Silverstream/Java/PLSQL/Unix.</li>
+						<li>Slashed training time for sampling specialists from 2 months to 2 weeks.</li>
+						<li>Led highly successful efforts of consulting team focused on the creation of software solutions ranging from batch systems to client-server and web-based applications.</li>
+						<li>Developed a multi-lingual website for a multimillion-dollar General Motors customer satisfaction survey conducted throughout South America - 2000 GM South American vendor of the year.</li>
+						<li>Contributed to corporate profitability through capture of additional contract work including a Kaiser project for MarketFacts that resulted in over $24M market cap growth for client.</li>
+						<li>Produced 700% improvements in performance of a data entry system utilized for a specialized diary study, which had been in production for 2 years. Minimized related manpower from 2 full-time employees to part-time system administration totaling 2 hours daily.</li>
+
+					</ul>
+				  </div>
+				</div>
+			</div> <!-- Row -->
+				
+			</div> <!-- Container-->
+			
+
+			<div class="anchor" id="lifemap">
+			  <h2 class="myheading" id="">Lifemap</h2>
+			  <div>
+				<img src="images/Lifemap.png"/>
+			  </div>
+
+			  <h2 id="intlinks" class="anchor myheading">Interesting Links</h2>
+
+				<ul id="myList">
+					<li><b><a class="inta" href="http://www.thwink.org/sustain/glossary/SystemsThinking.htm">Systems Thinking</a></b></li>
+					<li><b><a class="inta" href="https://www.simnet.org/page/RLF_Leadership">SIM RLF Leadership Program</a></b></li>
+					<li><b><a class="inta" href="http://www.itweb.co.za/index.php?option=com_content&view=article&id=111770">Where are the programmers? Art and Science.</a></b></li>
+					
+				</ul>
+			</div>
+			  
+			  <!--div id="skills"></div-->
+				<h2 id="skills" class="anchor myheading">Technical Skills</h2>
+			  
+				<ul class="mylist">
+				<li><p><b>Programming Languages:</b> .Net (VB and C#), C, Pro*C, C++, Java, Cobol, Ceres, Magic, PHP, Node.JS, JavaScript, Swift, Shell scripting</li>
+				<li><p><b>Operating Systems:</b> Unix (SCO, Solaris), Linux (Red Hat), Windows, iOS</li>
+				<li><p><b>Tools & Technologies:</b> Visual Studio, Sharepoint, Google Docs, J2EE</li>
+				<li><p><b>Databases:</b> Oracle*, SQL Server, MySQL, DB2*, Neo4J </li>
+				<li><p><b>Protocols:</b> XML, SMTP, FTP, IMAP</li>
+				<li><p><b>Others:</b> Bootstrap, JQuery, SDLC, OOP, Wiki, PMP*</li>
+				</ul>
+				<p> * Held certification in the past.</p>
+
+			</div> <!-- Lefter-->
+		  </div>   <!-- sm-9 -->
+		  
+	  <!--     Right hand column on page -->
+		  <div class="col-sm-3">
+			<div id="righter">
+					<img src="images/LI Nelson.jpg" style="display:block; margin-left:auto; margin-right:auto;"/>
+				<div id="links">
+
+			<table>
+			  <tbody>
+				<tr>
+				  <td><img src="images/LI2.jpg" height="60px"/></td>
+				  <td>
+					<table>
+					  <tbody>
+						<tr>
+						  <td align="center"><a href="https://www.linkedin.com/in/nelsonstill#recommendations" class="btn btn-success  label100" role="button">Recommendations</a></td> 
+						</tr><tr>
+						  <td align="center"><a href="https://www.linkedin.com/in/nelsonstill#background-skills" class="btn btn-warning label100" role="button">Skills</a></td> 
+						</tr><tr>
+						  <td align="center"><a href="https://www.linkedin.com/in/nelsonstill#education" class="btn btn-info  label100" role="button">Education</a></td> 
+						</tr>
+				  </td>
+				</tr>
+			  </tbody>
+			</table>
+			
+		  </div> <!-- sm-3-->
+	  </div> <!-- row-->
+	</div> <!-- container -->
+
+</body>
+</html>
